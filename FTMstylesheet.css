@@ -1,6 +1,6 @@
 /* This is the general stylesheet for the Fort Thomas Matters webpage
     Make sure to keep the background color of the site white unless we decide otherwise as a group. 
-    Make sure to use boostrap and use the div<container> class so all of our pages are uniform! 
+    Make sure to use boostrap and use the div<container-fluid> class so all of our pages are uniform! 
     Try to have a rough draft ready by the Monday after break; I'll book a study room so we can meet up that day and fix things since its due at the end of that week
     Try to base the layout off the already drawn up home page and article page layouts
     
@@ -34,8 +34,11 @@
 
 div {
     /* Have to insert this link into your sheet for the google fonts: <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Odibee+Sans|Slabo+27px&display=swap" rel="stylesheet"> */
-    font-family: font-family: 'Slabo 27px', serif;
+    font-family: 'Slabo 27px', serif;
     /* This will be the font for the main body text */
+    border: 1px solid black;
+    background-color: white;
+    height: 50vh;
 }
 
 .sectionsHeaders {
