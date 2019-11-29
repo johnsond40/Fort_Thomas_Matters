@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Banner</title>
-    <!--Hello, team.
+    <!--
+        (Commit 2)
+        [This is the second commit of the banner. At this point, I have implemented some minimal media queries, 
+        but the logo and ads still could use some work.
+        This code is by no means efficient, and will probably be hard to follow for the rest of the team.
+        I can safely attribute this to my lack of experience in Bootstrap, HTML, and CSS.
+        Don't be surprised if I reach out to one of you to help me with this.
+        Thank you team, and keep up the good work!
+        -Jude]
+(Commit 1)
+    [Hello, team.
     This is the initial commit to the banner, so DO NOT EMBED IT IN YOUR CODE YET.
     The reason the banner still contains ads is because of the way the website is run.
     As we guessed, the only thing that keeps this site up is revenue from advertisers.
@@ -24,7 +34,7 @@
     Let me know if any of you could help me with this, and also let me know any other design suggestions you may have.
 
     Thanks,
-    -Jude
+    -Jude]
     -->
 </head>
 <style>
@@ -41,21 +51,53 @@
         align-items: center;
     }
     
+    .menu-icon {
+        display: none
+    }
+    
     li a {
-        display: block;
+        display: flex;
+        flex-direction: row;
         color: black;
-        background-image: linear-gradient(#5494E8, #5C78FF);
+        background-color: #5494E8;
         text-align: center;
         padding: 3px 24px;
         text-decoration: none;
-        border: solid 1px black;
         font-family: 'Slabo 27px', serif;
+        border-left: 1px solid black;
     }
     
     li a:hover {
         color: white;
         text-decoration: none;
         background-image: linear-gradient(rgb(58, 101, 156), rgb(44, 56, 116));
+    }
+    
+    .dropdown {
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+    }
+    
+    .dropdown-content2 {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropdown-content2 {
+        display: block;
+        left: -150px;
     }
     
     .sides {
@@ -75,8 +117,93 @@
         font-family: 'Slabo 27px', serif;
     }
     
+    .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 30px;
+        font-family: 'Slabo 27px', serif;
+    }
+    
     .social a:hover {
         opacity: 0.8;
+    }
+    
+    .facebook {
+        display: none;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+    
+    .mouse {
+        display: none;
+    }
+    
+    .mouse2 {
+        display: none;
+    }
+    
+    .nav2 {
+        display: none;
+    }
+    
+    @media(max-width: 576px) {
+        nav ul {
+            display: none;
+        }
+        .menu-icon {
+            display: inline-block;
+            position: absolute;
+        }
+        .social {
+            display: none;
+        }
+        .facebook {
+            display: inline-block;
+        }
+        .hamburger {
+            display: inline-block;
+            position: fixed;
+            width: 9vw;
+        }
+        .sidebar {
+            display: inline-block;
+            position: absolute;
+            height: 100vh;
+            width: 50vw;
+            z-index: 1;
+            top: 0px;
+            left: 50vw;
+        }
+        .nav2 {
+            z-index: 3;
+            position: absolute;
+            top: 0px;
+            left: 50vw;
+        }
+        .menu2 {
+            list-style-type: none;
+            color: black;
+            background-image: none;
+            text-align: left;
+            padding: 0px 0px;
+            text-decoration: none;
+            font-family: 'Slabo 27px', serif;
+        }
+        .mouse {
+            display: inline;
+        }
+        .mouse:hover .nav2 {
+            display: inline-block;
+        }
+        .mouse:hover .mouse2 {
+            display: inline-block;
+        }
     }
 </style>
 
@@ -88,7 +215,7 @@
                 <span class="social top-right">
                     <a target="_blank" href="https://www.facebook.com/FtThomasMatters/"><img style="width:40px" src="facebook.png"></a>
                     Follow us on Facebook!</span>
-                <img style="max-height: 27vh; padding: 0px;" src="Banner-logo2.png">
+                <img class="banner2" style="max-width: 64vw; padding: 0px;" src="Banner-logo2.png">
             </div>
 
             <div class="sides col carousel slide" data-ride="carousel">
@@ -106,33 +233,93 @@
             </div>
         </div>
         <nav>
-            <div class="row">
+            <div class="row nav1">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Articles</a></li>
                     <li><a href="#">Classifieds</a></li>
-                    <li><a href="#">Podcasts</a></li>
-                    <li><a href="#">Sports</a></li>
+                    <li></li>
+                    <li class="dropdown">
+                        <a href="#">Podcasts</a>
+                        <div class="dropdown-content">
+                            <a href="#">How to Listen</a>
+                            <a href="#">Desktop Version</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Sports</a>
+                        <div class="dropdown-content">
+                            <a href="#">Baseball</a>
+                            <a href="#">Golf</a>
+                            <a href="#">Track</a>
+                            <a href="#">Soccer</a>
+                            <a href="#">Football</a>
+                            <a href="#">Basketball</a>
+                            <a href="#">Volleyball</a>
+                        </div>
+                    </li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Ft. Thomas Matters Family</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <li class="facebook"><a href="#">Facebook</a></li>
                 </ul>
             </div>
-            <div class="row">
-                <img src="jeffruby.png">
-            </div>
-            <br>
-            <div class="row">
-                <img src="opticare_and_express_mobile.png"> </div>
         </nav>
+        <div class="row">
+            <img class="img-fluid" src="jeffruby.png">
+        </div>
+        <br>
+        <div class="row">
+            <img class="img-fluid" src="opticare_and_express_mobile.png">
+        </div>
+        <div class="row mouse">
+            <a href="#"><img class="bottom-right hamburger" src="hamburger.png"></a>
+            <div class="mouse2">
+                <img class="sidebar" src="menubg.png">
+                <div class="nav2">
+                    <ul class="menu2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Classifieds</a></li>
+                        <li></li>
+                        <li class="dropdown">
+                            <a href="#">Podcasts</a>
+                            <div class="dropdown-content2">
+                                <a href="#">How to Listen</a>
+                                <a href="#">Desktop Version</a>
+                            </div>
+                        </li>
+                        <br>
+                        <li class="dropdown">
+                            <a href="#">Sports</a>
+                            <div class="dropdown-content2">
+                                <a href="#">Baseball</a>
+                                <a href="#">Golf</a>
+                                <a href="#">Track</a>
+                                <a href="#">Soccer</a>
+                                <a href="#">Football</a>
+                                <a href="#">Basketball</a>
+                                <a href="#">Volleyball</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Ft. Thomas Matters Family</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li class="facebook"><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
 </body>
 
 </html>
