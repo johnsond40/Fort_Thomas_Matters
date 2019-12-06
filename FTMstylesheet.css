@@ -27,7 +27,7 @@
     Color Codes: 
     #FFFFFF - White
     #87F4FF - Light Blue
-    #7AACFF - Slightly Darker Blue
+    #7AACFF - Slightly Darker Blue - for borders
     #5494E8 - More normal blue
     #5C78FF - Navy Blue
 */
@@ -47,6 +47,61 @@ div {
 body {
     background-color: #5494E8
 }
+
+
+/* These are the classes specifically for Dylan's Articles Page */
+
+.articleTitles {
+    font-family: 'Bree Serif', serif;
+    font-size: 28px;
+    color: #5C78FF;
+}
+
+.recentArticles {
+    font-family: 'Bree Serif', serif;
+    font-size: 45px;
+    text-align: center;
+    color: #5C78FF;
+    font-weight: bold;
+}
+
+.readMore {
+    color: black;
+    font-size: 25px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+.bigArticlesBodyText {
+    font-size: 25px;
+}
+
+.smallerArticleTitles {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
+
+.smallerArticleReadMore {
+    font-size: 15px;
+    color: black;
+}
+
+.viewMore {
+    background-color: #5C78FF;
+    font-family: 'Bree Serif', serif;
+    font-size: 35px;
+}
+
+
+/*This signifies end of the classes for Dylan's Articles Page */
 
 
 /*Everything following this comment are the installed classes and styles for the header */
@@ -232,3 +287,18 @@ ul {
 li {
     font-weight: bold;
 }
+
+.socialMediaLogos {
+    height: 75px;
+    width: 75px;
+}
+
+.textInFooter {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+
+/* End of classes and styles for the footer */
