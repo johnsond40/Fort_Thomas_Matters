@@ -148,173 +148,66 @@ hr {
     border: 2px solid #7AACFF;
 }
 
+.sponsorsTitle {
+    font-size: 40px;
+    color: #5C78FF;
+    font-family: 'Bree Serif', serif;
+}
+
 
 /*End of classes for Jude's Pages */
 
 
 /*Everything following this comment are the installed classes and styles for the header */
 
-.banner {
-    max-height: 27vh;
-    max-width: 20vw;
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.menu-icon {
-    display: none
+nav li {
+    flex: auto;
 }
 
-li a {
-    display: flex;
-    flex-direction: row;
+nav a {
+    font-size: 1.5em;
     color: black;
-    background-color: #5494E8;
-    text-align: center;
-    padding: 3px 24px;
     text-decoration: none;
-    font-family: 'Slabo 27px', serif;
-    border-left: 1px solid black;
+    background: #5494E8;
+    display: flex;
+    justify-content: center;
 }
 
-li a:hover {
+nav a:hover {
     color: white;
-    text-decoration: none;
     background-image: linear-gradient(rgb(58, 101, 156), rgb(44, 56, 116));
 }
 
-.dropdown {
-    display: inline-block;
+li {
+    font-family: 'Bree Serif', serif;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropdown-content2 {
-    display: block;
-    left: -150px;
-}
-
-.sides {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    border: 0px 0px 0px 0px;
-}
-
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 30px;
-    font-family: 'Slabo 27px', serif;
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 30px;
-    font-family: 'Slabo 27px', serif;
-}
-
-.social a:hover {
-    opacity: 0.8;
-}
-
-.facebook {
-    display: none;
-}
-
-.hamburger {
-    display: none;
-}
-
-.sidebar {
-    display: none;
-}
-
-.mouse {
-    display: none;
-}
-
-.mouse2 {
-    display: none;
-}
-
-.nav2 {
-    display: none;
-}
-
-@media(max-width: 576px) {
+@media (max-width:576px) {
     nav ul {
-        display: none;
-    }
-    .menu-icon {
-        display: inline-block;
-        position: absolute;
-    }
-    .social {
-        display: none;
-    }
-    .facebook {
-        display: inline-block;
-    }
-    .hamburger {
-        display: inline-block;
-        position: fixed;
-        width: 9vw;
-    }
-    .sidebar {
-        display: inline-block;
-        position: absolute;
-        height: 100vh;
-        width: 50vw;
-        z-index: 1;
-        top: 0px;
-        left: 50vw;
-    }
-    .nav2 {
-        z-index: 3;
-        position: absolute;
-        top: 0px;
-        left: 50vw;
-    }
-    .menu2 {
-        list-style-type: none;
-        color: black;
-        background-image: none;
-        text-align: left;
-        padding: 0px 0px;
-        text-decoration: none;
-        font-family: 'Slabo 27px', serif;
-    }
-    .mouse {
-        display: inline;
-    }
-    .mouse:hover .nav2 {
-        display: inline-block;
-    }
-    .mouse:hover .mouse2 {
-        display: inline-block;
+        flex-direction: column;
     }
 }
 
