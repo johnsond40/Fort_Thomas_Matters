@@ -51,13 +51,13 @@ body {
 
 /* These are the classes specifically for Dylan's Articles Page */
 
-.articleTitles, .classifiedTitles {
+.articleTitles, .classifiedTitles, .eventTitles {
     font-family: 'Bree Serif', serif;
     font-size: 28px;
     color: #5C78FF;
 }
 
-.recentArticles, .recentClassifieds {
+.recentArticles, .recentClassifieds, .recentEvents {
     font-family: 'Bree Serif', serif;
     font-size: 45px;
     text-align: center;
@@ -80,7 +80,7 @@ a:focus {
     color: black;
 }
 
-.bigArticlesBodyText, .bigClassifiedsBodyText {
+.bigArticlesBodyText, .bigClassifiedsBodyText, .bigEventsBodyText {
     font-size: 25px;
 }
 
