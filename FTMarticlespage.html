@@ -194,7 +194,7 @@
         </div>
 
 
-        <div class="row ">
+        <div id="article" class="row ">
 
             <!--This is the code for the physical articles section -->
 
@@ -685,12 +685,89 @@
         <br>
         <div class="row ">
             <div class="col-12 text-center ">
-                <button type="button " class="btn btn-primary btn-lg viewMore ">VIEW MORE</button>
+                <button type="button " onClick="more()" class="btn btn-primary btn-lg viewMore ">VIEW MORE</button>
             </div>
         </div>
         <br>
     </div>
 
+
+    <div id="more" style="display:none">
+        <div class="row">
+            <div class="col-12">
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <div class="col articleTitles " style="border:2px solid #7AACFF ">
+                        Kentucky Ranks #3 Deadliest State for Distracted Driving
+                    </div>
+                </div>
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <div class="col " style="border:2px solid #7AACFF ">
+                        <img src="articleimgs/SLOWDOWN_FTM.jpg " class="img-fluid ">
+                    </div>
+                    <div class="col " style="border:2px solid #7AACFF ">
+                        <div class="row bigArticlesBodyText " style="border:2px solid #7AACFF ">
+                            Kentucky ranks as the #3 most dangerous state for distracted driving, according to a new report released by LetsTalk.com. With a record-breaking number of driving travelers (49.3 million nationwide) forecasted to be traveling 50 miles or more this Thanksgiving
+                            holiday (the most since 2005), this information should be noted.
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="row " style="border:2px solid #7AACFF ">
+                            <a href="FTMIndividualArticlePage.html" class="readMore ">Read More >> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Code for a Set of Four Smaller Article Blocks-->
+        <div class="row ">
+            <div class="col-lg-3 col-xs-3 " style="border:2px solid #7AACFF ">
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <img src="articleimgs/ohiorivertrail.png " class="img-fluid ">
+                </div>
+                <div class="row smallerArticleTitles " style="border:2px solid #7AACFF ">
+                    Ohio River Recreational Trail Initiative Receives National Park Service Technical Assistance Award
+                </div>
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <a href="FTMIndividualArticlePage.html" class="smallerArticleReadMore ">Read More >> </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-3 " style="border:2px solid #7AACFF ">
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <img src="articleimgs/ohiorivertrail.png " class="img-fluid ">
+                </div>
+                <div class="row smallerArticleTitles " style="border:2px solid #7AACFF ">
+                    Ohio River Recreational Trail Initiative Receives National Park Service Technical Assistance Award
+                </div>
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <a href="FTMIndividualArticlePage.html" class="smallerArticleReadMore ">Read More >> </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-3 " style="border:2px solid #7AACFF ">
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <img src="articleimgs/ohiorivertrail.png " class="img-fluid ">
+                </div>
+                <div class="row smallerArticleTitles " style="border:2px solid #7AACFF ">
+                    Ohio River Recreational Trail Initiative Receives National Park Service Technical Assistance Award
+                </div>
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <a href="FTMIndividualArticlePage.html" class="smallerArticleReadMore ">Read More >> </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xs-3 " style="border:2px solid #7AACFF ">
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <img src="articleimgs/ohiorivertrail.png " class="img-fluid ">
+                </div>
+                <div class="row smallerArticleTitles " style="border:2px solid #7AACFF ">
+                    Ohio River Recreational Trail Initiative Receives National Park Service Technical Assistance Award
+                </div>
+                <div class="row " style="border:2px solid #7AACFF ">
+                    <a href="FTMIndividualArticlePage.html" class="smallerArticleReadMore ">Read More >> </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -738,6 +815,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+    <script>
+        function more() {
+            //articles = articles + more ;
+            document.getElementById('article').innerHTML = document.getElementById('article').innerHTML + document.getElementById('more').innerHTML;
+        }
+    </script>
 
 </body>
 
