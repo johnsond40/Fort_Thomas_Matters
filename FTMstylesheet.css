@@ -1,25 +1,4 @@
-/* This is the general stylesheet for the Fort Thomas Matters webpage
-    Make sure to keep the background color of the site white unless we decide otherwise as a group. 
-    Make sure to use boostrap and use the div<container-fluid> class so all of our pages are uniform! 
-    Try to have a rough draft ready by the Monday after break; I'll book a study room so we can meet up that day and fix things since its due at the end of that week
-    Try to base the layout off the already drawn up home page and article page layouts
-    
-*/
-
-
-/* Just a reminder on who has what pages:
-    Home Page - Jude
-    Articles Page - Dylan
-    Classifieds - Ethan
-    Sports - Robert
-    Events - Jonathan
-    About Fort Thomas - Jude
-    Sponsors - Jonathan
-    Contact Us - Dylan
-    Newsletter Pop-Up - Dylan
-    Header - Jude
-    Footer - Dylan
-*/
+/*This is the general stylesheet for the Fort THomas Matters website*/
 
 
 /* Potential Color Codes for All Pages:
@@ -51,13 +30,17 @@ body {
 
 /* These are the classes specifically for Dylan's Articles Page */
 
-.articleTitles, .classifiedTitles, .eventTitles {
+.articleTitles,
+.classifiedTitles,
+.eventTitles {
     font-family: 'Bree Serif', serif;
     font-size: 28px;
     color: #5C78FF;
 }
 
-.recentArticles, .recentClassifieds, .recentEvents {
+.recentArticles,
+.recentClassifieds,
+.recentEvents {
     font-family: 'Bree Serif', serif;
     font-size: 45px;
     text-align: center;
@@ -80,7 +63,9 @@ a:focus {
     color: black;
 }
 
-.bigArticlesBodyText, .bigClassifiedsBodyText, .bigEventsBodyText {
+.bigArticlesBodyText,
+.bigClassifiedsBodyText,
+.bigEventsBodyText {
     font-size: 25px;
 }
 
@@ -102,6 +87,69 @@ a:focus {
 
 
 /*This signifies end of the classes for Dylan's Articles Page */
+
+
+/*This signifies the beginning of the classes for Dylan's individual Article Page */
+
+.individualArticlePageTitle {
+    font-family: 'Bree Serif', serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #5C78FF
+}
+
+.individualArticlePageInfo {
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/*This signifies the end of the classes for Dylan's Individual Article Page */
+
+
+/*This signifies the Beginning of the Classes for Dylan's Contact Us Page */
+
+.contactUsPageTitle {
+    font-size: 45px;
+    font-weight: bold;
+    color: #5C78FF;
+    font-family: 'Bree Serif', serif;
+}
+
+.contactUsPageSubtitle {
+    font-size: 30px;
+    color: #5C78FF;
+    font-family: 'Bree Serif', serif;
+}
+
+.contactUsPageEmail {
+    font-size: 25px;
+    color: #5C78FF;
+    font-family: 'Bree Serif', serif;
+}
+
+.contactUsPageSocialsTitles {
+    font-size: 20px;
+    color: #5C78FF;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/*This signifies the end of the Classes for Dylan's Contact Us Page */
+
+
+/* Classes for Jude's Pages */
+
+.aboutPageBorder {
+    border: 2px solid #7AACFF;
+}
+
+hr {
+    border: 2px solid #7AACFF;
+}
+
+
+/*End of classes for Jude's Pages */
 
 
 /*Everything following this comment are the installed classes and styles for the header */
@@ -172,10 +220,6 @@ li a:hover {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     border: 0px 0px 0px 0px;
-}
-
-.border {
-    border: solid 1px black;
 }
 
 .top-right {
