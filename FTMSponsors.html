@@ -20,7 +20,7 @@
         }
         
         img {
-            border: 1px solid #7AACFF;
+            border: 1px solid #5494E8;
             padding: 3px;
         }
         
@@ -33,23 +33,28 @@
             width: 100% !important;
             margin: auto;
         }
+        
+        .tierTitles {
+            font-size: 40px;
+            font-family: 'Bree Serif', serif;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <nav>
-            <img src="navimages/banner.png" / style="border:none">
+            <img src="navimages/banner.png" />
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="FTMarticlespage.html">Articles</a></li>
-                <li><a href="FTMSportsPage.html">Sports</a></li>
-                <li><a href="FTMclassifiedspage.html">Classifieds</a></li>
-                <li><a href="https://fortthomasmatters.podbean.com/" target="_blank">Podcasts</a></li>
-                <li><a href="FTMeventspage.html">Events</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="FTMSponsors.html">Sponsors</a></li>
-                <li><a href="FTMContactUspage.html">Contact</a></li>
+                <li><a href="index.html" style="color: white">Home</a></li>
+                <li><a href="FTMarticlespage.html" style="color: white">Articles</a></li>
+                <li><a href="FTMSportsPage.html" style="color: white">Sports</a></li>
+                <li><a href="FTMclassifiedspage.html" style="color: white">Classifieds</a></li>
+                <li><a href="https://fortthomasmatters.podbean.com/" target="_blank" style="color: white">Podcasts</a></li>
+                <li><a href="FTMeventspage.html" style="color: white">Events</a></li>
+                <li><a href="About.html" style="color: white">About</a></li>
+                <li><a href="FTMSponsors.html" style="color: white">Sponsors</a></li>
+                <li><a href="FTMContactUspage.html" style="color: white">Contact</a></li>
             </ul>
             <a href="https://www.jeffruby.com/" target="_blank"><img src="navimages/rubys.jpg" /></a>
             <a href="https://www.opticarevision.com/location/newport/" target="_blank"><img src="navimages/bannerAd.jpg" /></a>
@@ -57,68 +62,115 @@
     </div>
 
     <div class="container">
-        <div class="row ">
+        <div class="row">
             <div class="col sponsorsTitle text-center">
                 Fort Thomas Matters Family
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+            <div class="col text-center">
+
+                <button type="button" class="btn btn-primary margin2" style="background-color:#5C78FF" data-toggle="modal" data-target="#exampleModal">
+                            Become a Member of Our Family!
+                          </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Please Enter Your Email</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <form class="form-inline">
+                                        <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="you@example.com">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
-            </div>
-            <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
-            </div>
-            <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+        </div>
+        <div class="row">
+            <div class="col text-center tierTitles" style="color: #F0CC17">
+                Gold Tier Sponsors
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
             </div>
             <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
             </div>
             <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
             </div>
             <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center tierTitles" style="color:#BAAEAE">
+                Silver Tier Sponsors
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
             </div>
             <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
             </div>
             <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
             </div>
             <div class="col-3">
-                <a href="http://www.merkandgilelaw.com"><img src="placeholderads/vibe.png"></a>
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center tierTitles" style="color:#BD6E14">
+                Bronze Tier Sponsors
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
+            </div>
+            <div class="col-3">
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
+            </div>
+            <div class="col-3">
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
+            </div>
+            <div class="col-3">
+                <a href="http://www.merkandgilelaw.com" target="_blank"><img src="placeholderads/vibe.png"></a>
             </div>
         </div>
     </div>
     <!--Footer-->
     <div class="container ">
-        <div class="row " style="border:1px solid #7AACFF ">
-            <div class="col-md-3 text-center textInFooter" style="border:1px solid #7AACFF ">
+        <div class="row " style="border:1px solid #5494E8 ">
+            <div class="col-md-3 text-center textInFooter" style="border:1px solid #5494E8 ">
                 <ul>
                     <li>18 North Fort Thomas Avenue</li>
                     <li>Suite 105</li>
                     <li>Fort Thomas, KY 41076</li>
                 </ul>
             </div>
-            <div class="col-md-5 " style="border:1px solid #7AACFF ">
+            <div class="col-md-5 " style="border:1px solid #5494E8 ">
                 <img src="footerimg/FTM-header-1.jpg " class="img-fluid " style="border: none">
             </div>
-            <div class="col-md-4 " style="border:1px solid #7AACFF ">
+            <div class="col-md-4 " style="border:1px solid #5494E8 ">
                 <div class="row " style="border:none ">
                     <div class="col textInFooter text-center">
                         Contact Us!

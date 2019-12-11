@@ -1,16 +1,5 @@
 /*This is the general stylesheet for the Fort THomas Matters website*/
 
-
-/* Potential Color Codes for All Pages:
-    Stick with the blue and white color themes and use the same colors so we all have consistency. we can change them around later if needed. 
-    Color Codes: 
-    #FFFFFF - White
-    #87F4FF - Light Blue
-    #7AACFF - Slightly Darker Blue - for borders
-    #5494E8 - More normal blue
-    #5C78FF - Navy Blue
-*/
-
 div {
     /* Have to insert this link into your sheet for the google fonts: <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat&display=swap" rel="stylesheet"> */
     font-family: 'Montserrat', sans-serif;
@@ -142,16 +131,16 @@ a:focus {
 /* Classes for Jude's Pages */
 
 .aboutPageBorder {
-    border: 2px solid #7AACFF;
+    border: 2px solid #5494E8;
     border-radius: 5px;
 }
 
 hr {
-    border: 1px solid #7AACFF;
+    border: 1px solid #5494E8;
 }
 
 .sponsorsTitle {
-    font-size: 40px;
+    font-size: 55px;
     color: #5C78FF;
     font-family: 'Bree Serif', serif;
 }
